@@ -1,0 +1,95 @@
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4541
+#
+# http://www.sequelpro.com/
+# https://github.com/sequelpro/sequelpro
+#
+# Host: localhost (MySQL 5.7.16)
+# Database: noughtscrosses
+# Generation Time: 2017-06-22 16:15:16 +0000
+# ************************************************************
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table games
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `games`;
+
+CREATE TABLE `games` (
+  `game_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `board` varchar(200) DEFAULT NULL,
+  `winner` int(1) DEFAULT NULL,
+  PRIMARY KEY (`game_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `games` WRITE;
+/*!40000 ALTER TABLE `games` DISABLE KEYS */;
+
+INSERT INTO `games` (`game_id`, `board`, `winner`)
+VALUES
+	(1,'XOXXXOOXO',0),
+	(2,'XOXOXOOOX',1),
+	(3,'XOXXXOOXO',0),
+	(4,'XOXOXOOOX',1),
+	(5,'XOXXXOOXO',0),
+	(6,'XOXOXOOOX',1),
+	(7,'XOOXXOOXO',2),
+	(8,'XOXOXOOOX',1),
+	(9,'XOXXXOOXO',0),
+	(10,'XOXOXOOOX',1),
+	(11,'XOOXXOOXO',2),
+	(12,'XOXOXOOOX',1),
+	(13,'XOXXXOOXO',0),
+	(14,'XOXOXOOOX',1),
+	(15,'XOOXXOOXO',2),
+	(16,'XOXOXOOOX',1),
+	(17,'XOXXXOOXO',0),
+	(18,'XOXOXOOOX',1),
+	(19,'XOOXXOOXO',2),
+	(20,'XOXOXOOOX',1),
+	(21,'XOXXXOOXO',0),
+	(22,'XOXOXOOOX',1),
+	(23,'XOOXXOOXO',2),
+	(24,'XOXOXOOOX',1),
+	(25,'XOXXXOOXO',0),
+	(26,'XOXOXOOOX',1),
+	(27,'XOOXXOOXO',2),
+	(28,'XOXOXOOOX',1),
+	(29,'XOXXXOOXO',0),
+	(30,'XOXOXOOOX',1),
+	(31,'XOOXXOOXO',2),
+	(32,'XOXOXOOOX',1),
+	(33,'XOXXXOOXO',0),
+	(34,'XOXOXOOOX',1),
+	(35,'XOOXXOOXO',2),
+	(36,'XOXOXOOOX',1),
+	(37,'XOXXXOOXO',0),
+	(38,'XOXOXOOOX',1),
+	(39,'XOOXXOOXO',2),
+	(40,'XOXOXOOOX',1),
+	(41,'XOXXXOOXO',0),
+	(42,'XOXOXOOOX',1),
+	(43,'XOOXXOOXO',2),
+	(44,'XOXOXOOOX',1);
+
+/*!40000 ALTER TABLE `games` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
